@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    font-style: italic;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    color:brown;
+}
+container-i{
+    width: 100%;
+    padding: 10px,12px;
+    margin: 7px 0;
+    display: grid;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing:border-box;
+}
+.form-i{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px,12px;
+    position: relative;
+    z-index: 1;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 44px;
+}
