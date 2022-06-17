@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <hr><h1>Heart Disease Prediction Using Naive Bayes</h1><hr>
+    <div class="container-i">
+        <form action = "{{url_for('predict')}}" class="form-i" method="post">
+            Age:<input type="number" name="age" placeholder="Enter your Age :" ><br>
+            Blood_Pressure:<input type="number" name="bp" placeholder="Blood Pressure Value :" ><br>
+            Cholestrol:<input type="number" name="chol" placeholder="Cholestrol Value:" ><br>
+            Blood_Sugar:<input type="number" name="bs" placeholder="Blood Sugar Value:" ><br>
+            ECG:<input type="number" name="ecg" placeholder="ECG Report :" ><br>
+            CA:<input type="number" name="ca" placeholder="CA Value:" ><br>
+            THAL:<input type="number" name="thal" placeholder="THAL Value:" ><br>
+
+            <!--Submit Button-->
+            <input type="submit" value="predict" class="submit">
+        </form>
+        <h6>Patient Result was : {{prediction}}</h6>
+    </div>
+    <style>
+        body
+            {
+                text-align: center;
+                color: aqua;
+                background-repeat: no-repeat;
+                background-image: url('../static/heart.image.jpg');
+                background-size: cover;
+            }
+    </style>
+</body>
+</html>
+
+
+
+
+
