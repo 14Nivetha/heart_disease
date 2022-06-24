@@ -4,7 +4,7 @@ import pickle
 
 #creating constructor
 app=Flask(__name__)
-model=pickle.load(open('./model/model.pickle', 'rb'))
+model=pickle.load(open('model.pkl', 'rb'))
 # print(model)
 
 @app.route('/')
